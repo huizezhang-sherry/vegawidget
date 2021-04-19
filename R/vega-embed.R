@@ -76,7 +76,7 @@
 #'
 vega_embed <- function(renderer = c("canvas", "svg"), actions = NULL,
                        defaultStyle = TRUE, config = NULL, patch = NULL,
-                       bind = NULL, ...) {
+                       bind = NULL, tooltip = NULL, ...) {
 
   renderer <- match.arg(renderer)
 
@@ -90,6 +90,7 @@ vega_embed <- function(renderer = c("canvas", "svg"), actions = NULL,
       config = config,
       patch = patch,
       bind = bind,
+      tooltip = tooltip,
       ...
     )
 
